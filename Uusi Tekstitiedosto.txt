@@ -1,0 +1,31 @@
+Teamwork I. (Software Engineering Concepts)
+
+1. What is software engineering? Explain what it includes.
+
+- Engineering is the analysis, design, construction, verification, and management of technical (or social) entities.
+
+2. How engineering process is divided into different phases? What activities are involved in each phase?
+
+-   The definition phase,  where key requirements of the system and the software are identified
+-   The development phase – focuses on software design,
+-   The maintenance phase - focuses on change that is associated with error correction, adaptations required as the software's environment evolves, and changes due to enhancement brought about by changing customer requirements.
+
+3. Why do we need software development process models?
+
+- Depending on the project it is good to have different delevopement processes to make the develpoment go smoothly from start to end.
+
+4. How Spiral model differs from Waterfall model?
+
+- Waterfall mode is very straightforward that moves from one step to another, Spiral moves in repeated cycles until finish.
+
+5. What are the advantages of Modified Waterfall model over Pure Waterfall model?
+
+- Regular waterfall mode is moving step to step when one is finished, Modified Waterfall mode let's you move backwards or skip steps or even do multiple steps at a time.
+
+6. What are the advantages of iterative development?
+
+- Doing short cycles, adapting the project based on feedback and changing requirements between iterations, user testing after every build, issues are discovered and fixed continuously.
+
+7. What are the advantages of RUP over other development process models?
+
+- RUP ensures that the systems foundation is strong before moving forwards, it helps teams find problems early but in can be to complex for small projects, RUP is also heavy on documentation.
