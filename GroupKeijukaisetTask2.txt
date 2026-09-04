@@ -1,13 +1,17 @@
 Teamwork II (Agile Software Development)
+
 Group: Keijukaiset
+
 Group members:
-* Mika Perttu — e2402623
-* Jesse Mattila — e2402265
-* Vadim Kliuchevskii — e2402269
+* Mika Perttu â€” e2402623
+* Jesse Mattila â€” e2402265
+* Vadim Kliuchevskii â€” e2402269
+
 1. What is the main idea of Agile software development model?
 * The main idea of Agile is to develop software in small working parts.
 * Instead of planning and building the entire application at once, the team works in short cycles called iterations. After each iteration, the team has a working part of the software, receives feedback, and decides what to improve next.
 * Agile accepts that requirements can change during the project.
+
 2. What are the main principle of Agile Agile software development model?
 The Manifesto for Agile Software Development defines the approach known as agile software development. The followings are the main principles of the Agile Software Development:
 * Customer satisfaction by rapid delivery of useful software
@@ -22,17 +26,22 @@ The Manifesto for Agile Software Development defines the approach known as agile
 * Simplicity
 * Self-organizing teams
 * Regular adaptation to changing circumstances
+
 3. What are similarities and differences between RUP and Agile software development models?
 RUP and Agile both use iterative development, but RUP is generally more structured and documentation heavy. Both emphasize addressing and mitigating major architectural and technical risks early in the project.
+
 4. What are similarities and differences between Spiral and Agile software development models?
 Spiral and Agile both use repeated cycles, but Spiral focuses strongly on risk analysis, while Agile focuses strongly on frequent delivery and customer feedback.
+
 5. What are similarities and differences between Scrum, XP and FDD programming models?
 All three are Agile methods, but they focus on different parts of development:
-* Scrum focuses mainly on organizing and managing the team’s work. 
+* Scrum focuses mainly on organizing and managing the teamâ€™s work. 
 * XP (Extreme Programming) focuses on programming practices and code quality. 
 * FDD (Feature-Driven Development) organizes development around small client-valued features.
+
 6. What are the advantages of Scrum development model?
 Short Sprints, regular feedback and clear priorities help the team adapt and deliver value frequently.
+
 7. Explain roles, artifacts and events in Scrum.
 Roles:
 * Product Owner: Prioritizes the Product Backlog and ensures the team works on the most valuable features.
@@ -48,12 +57,15 @@ Events
 * Daily Scrum: A short daily meeting to check progress and adjust the plan.
 * Sprint Review: The team presents and discusses the result with stakeholders.
 * Sprint Retrospective: The team discusses how to improve its working process.
+
 8. What are the roles in XP development model?
 The main roles in XP are Customer, Programmer, Tester, Coach, Tracker, Manager and Consultant
+
 9. What are the main advantages of XP development model.
-* High-Quality Code emphasizes testing and continuous integration, leading to fewer defects.
-* Adaptability allows teams to quickly adapt to changing requirements and customer needs.
-* Increased Collaboration encourages teamwork and communication, resulting in a more cohesive development process.
+* High-Quality CodeÂ emphasizesÂ testing and continuous integration, leading to fewer defects.
+* AdaptabilityÂ allows teams toÂ quickly adapt to changing requirements and customer needs.
+* Increased CollaborationÂ encouragesÂ teamwork and communication, resulting in a more cohesive development process.
+
 10. What are the main features of Feature Driven development model?
 * Feature-Driven Development (FDD) organizes work around small, useful functions called features.
 * A feature should provide value to the customer and normally be small enough to complete within about two weeks.
