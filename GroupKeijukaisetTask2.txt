@@ -6,6 +6,7 @@ Group members:
 * Mika Perttu — e2402623
 * Jesse Mattila — e2402265
 * Vadim Kliuchevskii — e2402269
+* Tuukka Kosonen — e2203446
 
 1. What is the main idea of Agile software development model?
 * The main idea of Agile is to develop software in small working parts.
