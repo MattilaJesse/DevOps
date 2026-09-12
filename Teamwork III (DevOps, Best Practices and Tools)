@@ -1,0 +1,93 @@
+Teamwork III (DevOps, Best Practices and Tools)
+Group: Keijukaiset
+
+Group members:
+* Mika Perttu - e2402623
+* Jesse Mattila - e2402265
+* Vadim Kliuchevskii - e2402269
+* Tuukka Kosonen - e2203446
+
+1. What is the main purpose of DevOps?
+The main purpose of DevOps is to improve collaboration between development(Dev) and operations(Ops) teams to deliver high-quality software continuously, fast and more reliably through automation and simplifying the processes of building, testing, releasing, and maintaining applications.
+
+2. What are the main stages of a CI/CD pipeline?
+The main stages of a CI/CD pipeline are source, build, test, and deploy. Code changes trigger the pipeline, which builds the application, runs automated tests, and deploys it to a test or production environment.
+
+3. Which DevOps tools can be used for source control, CI/CD, containerization, infrastructure, configuration management, and monitoring?
+* Source control: Git (GitHub & GitLab); 
+* CI: Jenkins, GitLab CI, CircleCI.
+* CD: GitLab CI/CD, Spinnaker, Argo CD.
+* Containerization: Docker, Kubernetes.
+* Infrastructure: Terraform, Ansible, AWS CloudFormation.
+* configuration management: Ansible, Puppet, Chef
+* monitoring: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana).
+
+4. How can Git support effective collaboration in DevOps?
+Git supports effective collaboration through version control, branching, and merging. It allows developers to work in parallel, track and revert changes, and resolve conflicts. Platforms such as GitLab and GitHub also enable code reviews and integration with CI/CD pipelines.
+
+5. What is Infrastructure as Code (IaC), and what are its benefits?
+IaC is the practice of defining and managing infrastructure using code and automation rather than manual processes. It involves version controling the infrastructure configurations just like application code, making deployments repeatable and consistent.
+Its benefits include automation, consistent and repeatable environments, version control, fewer manual errors, and faster infrastructure provisioning.
+
+6. What is configuration management, and how can Ansible support it?
+Configuration management is the process of maintaining systems in a desired and consistent state. Ansible supports it by using playbooks to automate software installation, system configuration, and service management across multiple servers.
+
+7. What are containers, and why are they useful in DevOps?
+Containers are isolated environments for running applications. They contain the application and the things it needs to work, such as libraries and other dependencies. Docker is a popular tool for creating and running containers.
+For example, a hotel reservation application needs Python and several libraries. With Docker, the team can package these together. Each team member can then run the application with the same Python version and libraries.
+
+Containers are useful in DevOps because:
+* Consistent environments: the application runs in a similar environment on a developer's computer, during testing, and on a server. This helps avoid "it works on my computer" problems. 
+* Easier testing and deployment: the team can test a container image and use the same image to run the application on a server. 
+* Isolation: applications can use different libraries without interfering with each other. 
+* Fast startup and efficient resource use: containers usually start quickly and use fewer resources than virtual machines because they share the operating system's kernel.
+
+8. What is container orchestration, and what role does Kubernetes play?
+Container orchestration means automatically managing many containers. It includes starting and stopping containers, keeping them running, and managing how they communicate.
+When an application has many containers, managing each one manually becomes difficult. Kubernetes is a tool that automates this work.
+
+Kubernetes:
+Keep the application running: if a container fails, Kubernetes can restart it or replace it.
+Run more copies: when configured to do so, Kubernetes can increase the number of running copies when more users visit the application.
+Distribute traffic: it can direct user requests to different copies of the application, so one copy does not have to handle all requests.
+Manage updates: it can gradually replace old copies with new ones, helping the application stay available during an update.
+Use multiple servers: it decides which server should run each container, based on available resources and application requirements.
+
+9. What are monitoring and observability, and which tools support them?
+Monitoring means checking whether an application and its servers are working correctly. It tracks response time, CPU usage, and errors, and can send alerts when something goes wrong.
+Observability helps the team understand why a problem happens. It uses metrics (numbers), logs (event records), and traces (the path of a request through the system).
+
+10. What is DevSecOps, and how does it improve software security?
+DevSecOps means including security in every stage of software development. Developers, operations teams, and security specialists share responsibility for security.
+Automated checks can find unsafe code, vulnerable libraries, and exposed passwords early. This helps the team fix problems before the application reaches users.
+
+11. Why is automated testing important in DevOps?
+Automated testing checks code changes without someone testing everything manually. It helps teams find bugs quickly and check that existing features still work.
+For example, after changing room search, tests can check that customers can still make reservations. This makes frequent updates safer and saves time.
+
+12. What is configuration drift, and how can it be reduced?
+Configuration drift happens when a system's actual settings become different from the expected settings over time. For example, someone manually updates software on one server, while other servers keep the old version.
+Teams can reduce drift by storing configuration in Git, using tools such as Terraform and Ansible, and regularly checking systems against the expected configuration.
+
+13. Why are small and frequent deployments considered a DevOps best practice?
+Small updates are easier to test, review, and troubleshoot because they contain fewer changes. If something breaks, the team can find the cause more easily.
+Frequent deployments also deliver improvements to users sooner and allow the team to receive feedback quickly.
+
+14. What are the main steps for responding to a failed deployment?
+*  Detect the problem: check alerts, logs, and application health. 
+*  Stop the rollout: prevent the faulty update from reaching more users. 
+*  Restore service: return to the previous working version if safe, or apply a fix. 
+*  Verify recovery: check that the application works correctly again. 
+*  Investigate and improve: find the cause and add tests or checks to prevent the same failure.
+
+15. How can Git, Jenkins, Docker, Kubernetes, Terraform, Ansible, Prometheus, and Grafana work together?
+These tools can support different parts of one DevOps workflow:
+* Git stores application code and configuration history. 
+* Jenkins detects code changes and runs automated builds and tests. 
+* Docker packages the application and its dependencies into an image. 
+* Terraform creates infrastructure, such as servers and networks. 
+* Ansible installs software and configures servers. 
+* Kubernetes runs and manages the application's containers. 
+* Prometheus collects metrics and supports alerts. 
+* Grafana shows these metrics in dashboards. 
+For example, the team sends a hotel application update to Git. Jenkins tests it and builds a Docker image. Kubernetes runs the new version on infrastructure prepared with Terraform and Ansible. Prometheus and Grafana help the team check that it is working correctly.
