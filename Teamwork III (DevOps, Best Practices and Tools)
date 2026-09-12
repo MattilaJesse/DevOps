@@ -56,6 +56,11 @@ Use multiple servers: it decides which server should run each container, based o
 9. What are monitoring and observability, and which tools support them?
 Monitoring means checking whether an application and its servers are working correctly. It tracks response time, CPU usage, and errors, and can send alerts when something goes wrong.
 Observability helps the team understand why a problem happens. It uses metrics (numbers), logs (event records), and traces (the path of a request through the system).
+Tools:
+•	Prometheus: A monitoring and alerting system. Collects time-series metrics and supports monitoring and alerts
+•	Grafana A visualization and observability platform	Displays metrics and other monitoring data through dashboards
+•	Elastic Stack: collects and searches logs to help investigate problems.
+•	Jaeger: traces requests through the application to help find delays and errors.
 
 10. What is DevSecOps, and how does it improve software security?
 DevSecOps means including security in every stage of software development. Developers, operations teams, and security specialists share responsibility for security.
