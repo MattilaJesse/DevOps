@@ -1,24 +1,28 @@
-Teamwork V � Project Requirements Specification
+Teamwork V — Project Requirements Specification
 
 Project: Hotel Management and Booking Application
 Group: Keijukaiset
 
 Team members:
-* Mika Perttu � e2402623
-* Jesse Mattila � e2402265
-* Vadim Kliuchevskii � e2402269
-* Tuukka Kosonen � e2203446
+* Mika Perttu — e2402623
+* Jesse Mattila — e2402265
+* Vadim Kliuchevskii — e2402269
+* Tuukka Kosonen — e2203446
+
 1. Identify the Stakeholders and User Needs
 * Customers need to find available rooms, see prices, make reservations, and view or cancel their own reservations.
 * Receptionists need to find reservations, create bookings for customers, and manage check-in and check-out.
 * Hotel management needs accurate reservation information and a system that prevents double bookings. Need to add and update rooms, set room prices, and manage room availability.
+
 2. Updated Application Requirements
+
 Functional requirements
 * The application shall provide a simple web interface for customers, receptionists, and hotel management.
 * The start page shall allow users to select a role for demonstration purposes.
 * Customers shall be able to search for rooms, create reservations, and view or cancel their reservations.
 * Receptionists shall be able to find and create reservations and record check-in and check-out.
 * Hotel management shall be able to add and update rooms, change prices, and mark rooms as unavailable.
+
 Usability
 * The interface shall use clearly labelled buttons, forms, and tables.
 * Users shall receive confirmation after successful operations.
@@ -31,6 +35,7 @@ Compatibility and integration
 * Users shall access the application through a web browser.
 * The application shall be packaged as a runnable JAR and require a compatible Java runtime.
 * No external booking or payment services are required.
+
 Constraints
 * This is a small educational experiment.
 * The application shall run locally and use fictional customer data.
@@ -45,15 +50,55 @@ Constraints
 * Functional requirements: Provide pages for room searches, reservations, receptionist operations, and room management.
 * Non-functional requirements: Use a consistent layout, clearly labelled controls, and understandable validation messages.
 The web interface sends requests to the Java backend. Room and reservation management process these requests and use file storage to save and load data.
+
 4. Updated QFD Requirement: Easy Booking
 * User need: Make a reservation easily.
 * Importance: 5.
 * Technical requirement: Provide a simple web booking form.
 * Acceptance criterion: A customer can enter an identifier and dates, view available rooms, select a room, and receive a booking confirmation.
 
-
-5. Draw use-case and sequence diagrams for the application.�
-Top of Form
-Bottom of Form
-
+5. Draw use-case and sequence diagrams for the application. 
+Hotel Application
+│
+├── Frontend (Web Interface)
+│   │
+│   ├── Start Page
+│   │   └── Select role
+│   │
+│   ├── Customer Page
+│   │   ├── Search available rooms
+│   │   ├── View room details and prices
+│   │   ├── Make a reservation
+│   │   ├── View own reservations
+│   │   └── Cancel own reservation
+│   │
+│   ├── Receptionist Page
+│   │   ├── Find reservations
+│   │   ├── Create a reservation for a customer
+│   │   ├── Check-in
+│   │   └── Check-out
+│   │
+│   └── Hotel Management Page
+│       ├── View rooms
+│       ├── Add a room
+│       ├── Update room details
+│       ├── Set room prices
+│       └── Mark a room as unavailable
+│
+├── Backend (Java)
+│   │
+│   ├── Room Management
+│   │   ├── Manage room details and prices
+│   │   └── Find available rooms
+│   │
+│   └── Reservation Management
+│       ├── Create and find reservations
+│       ├── Cancel reservations
+│       ├── Calculate total price
+│       ├── Prevent double bookings
+│       └── Update check-in / check-out status
+│
+└── File Storage
+    ├── Save and load rooms
+    └── Save and load reservations
 
