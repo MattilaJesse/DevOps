@@ -1,0 +1,208 @@
+Teamwork IV (Software Requirements Specification)
+Group: Keijukaiset
+Group members:
+* Mika Perttu — e2402623
+* Jesse Mattila — e2402265
+* Vadim Kliuchevskii — e2402269
+* Tuukka Kosonen — e2203446
+
+1. What are the main responsibilities of the customer and the software engineer during requirements engineering? Discuss why both sides need to participate actively.
+Customer’s responsibilities:
+* Explain what problem the software should solve. 
+* Describe the necessary features and business rules. 
+* Give examples of how the software will be used. 
+* Check the requirements and confirm that they are correct. 
+* Inform the team when requirements change. 
+Software engineer’s responsibilities:
+* Ask questions to understand the customer’s needs. 
+* Find unclear, missing, or conflicting requirements. 
+* Write the requirements clearly and precisely. 
+* Check whether the requirements are technically possible. 
+* Discuss limitations, costs, risks, and possible solutions with the customer. 
+
+2.  Why is communication difficult during requirements analysis? As a team, identify common causes of misunderstanding and suggest ways to reduce them.
+Communication can be difficult because customers and software engineers may have different knowledge, experience, and expectations. Customers understand the business but may not know technical terms. Software engineers understand technology but may not fully understand the customer’s work.
+Cause
+How to reduce it
+Unclear or general requirements
+Ask specific questions and write requirements clearly.
+Different meanings of the same words
+Define important terms in a glossary.
+Too much technical language
+Use simple language and practical examples.
+Missing information
+Organize regular meetings with the customer.
+Different expectations
+Use diagrams, prototypes, and example scenarios.
+Requirements change during development
+Record and discuss every important change.
+People make assumptions without checking
+Repeat the idea in your own words and ask for confirmation.
+
+3.  Requirements analysis focuses on what the system should do rather than how it should be implemented. Discuss why this separation is useful during early analysis.
+During requirements analysis, the team should first define what the system must do without deciding exactly how it will be implemented.
+This separation is useful because:
+* The team can focus on the customer’s real needs. 
+* Requirements remain understandable to non-technical customers. 
+* Developers can compare different technical solutions later. 
+* The team avoids choosing technologies too early. 
+* Requirements stay valid even if the technology changes. 
+* It reduces the risk of building the wrong solution.
+
+4.  What information should an analyst collect during problem recognition? Create a list of questions that could help a team understand the customer's real problem.
+During problem recognition, the analyst should understand the customer’s current situation, difficulties, goals, users, and limitations. The purpose is to find the real problem, not only the solution initially suggested by the customer.
+About the current situation
+* How is the work done now? 
+* Who performs this work? 
+* What tools or systems are currently used? 
+* What works well in the current process? 
+* What does not work well? 
+
+About the problem
+* What is the main problem? 
+* When and how often does it happen? 
+* Who is affected by it? 
+* What are the consequences of the problem? 
+* Why does the customer consider it important? 
+* What could be causing the problem? 
+About the desired result
+* What should the new system improve? 
+* What tasks should the system support? 
+* What result does the customer expect? 
+* How will we know that the problem has been solved? 
+* Which features are essential, and which are optional? 
+About users and limitations
+* Who will use the system? 
+* Do different users need different functions? 
+* Are there time, budget, technical, or legal limitations? 
+* Does the system need to work with other systems? 
+* Are there any security or privacy requirements?
+
+5.  Compare a simple question-and-answer interview with the FAST approach. Discuss the strengths of each approach and explain when a team might prefer a collaborative meeting.
+FAST means Facilitated Application Specification Technique. It is a structured meeting where customers, users, developers, and other stakeholders work together to identify and agree on requirements. A facilitator manages the discussion.
+A question-and-answer interview is usually a discussion between an analyst and one customer or stakeholder. The analyst asks prepared questions and records the answers.
+Strengths of an interview:
+* Simple to organize. 
+* Allows detailed follow-up questions. 
+* Useful for understanding one person’s work. 
+* People may speak more openly about sensitive problems. 
+* Suitable when only a few stakeholders are involved.
+Strengths of FAST:
+* Different stakeholders share their knowledge at the same time.
+* Misunderstandings can be found and corrected quickly.
+* Conflicting requirements can be discussed together.
+* The group can agree on priorities.
+* It creates a shared understanding of the system.
+
+6. Design a FAST meeting for requirements gathering. Decide who should participate, what rules should be followed, how ideas should be recorded, and how the final consensus list should be created.
+The purpose of the FAST meeting is to collect requirements, solve disagreements, and create a list of requirements accepted by the whole team.
+Participants
+The meeting should include:
+* Facilitator – leads the meeting and keeps the discussion focused. 
+* Customer representative – explains the business goals. 
+* Users – explain how they will use the system. 
+* Software engineers – evaluate and clarify the requirements. 
+* Requirements analyst – asks questions and documents the requirements. 
+* Recorder – writes down ideas and decisions. 
+Meeting rules
+* Everyone should have an opportunity to speak. 
+* Use simple language and avoid unnecessary technical terms. 
+* Focus first on what the system must do, not how to program it. 
+* Do not criticize ideas during brainstorming. 
+* Ask questions when something is unclear. 
+* Record disagreements instead of ignoring them. 
+* Keep the discussion focused on the meeting topic. 
+* Important decisions must be confirmed by the group. 
+Recording ideas
+Ideas can be recorded using:
+* A shared document or digital whiteboard. 
+* Sticky notes, with one requirement on each note. 
+* Categories such as customer, receptionist, administrator, and system. 
+* A separate list for unclear questions and conflicts. 
+Each requirement should receive an identifier, for example:
+* REQ-01: The customer can search for available rooms by date. 
+* REQ-02: The receptionist can create and update reservations. 
+Creating the final consensus list
+1. Collect all suggested requirements. 
+2. Remove duplicates. 
+3. Rewrite unclear ideas as clear requirements. 
+4. Discuss conflicting requirements. 
+5. Group requirements by user or function. 
+6. Prioritize them as must have, should have, or could have. 
+7. Review each requirement with the participants. 
+8. Add unresolved questions to a separate follow-up list. 
+9. Ask the customer and team to approve the final list. 
+10. Save and share the document with everyone.
+For the hotel application, the participants could be a hotel manager, receptionist, customer representative, developers, analyst, and facilitator.
+
+7. What is the purpose of a mini-specification? Discuss what information should be included in a good mini-specification and how it can help later development activities?
+A mini-specification describes one system function or process in more detail. It explains what the function must do without describing the complete system.
+A good mini-specification should include:
+* Purpose of the function 
+* Inputs and outputs 
+* Main processing steps 
+* Business rules and conditions 
+* Errors or exceptional situations 
+Example: Room reservation
+* Input: Customer, room, check-in and check-out dates 
+* Process: Check room availability and create the reservation 
+* Output: Reservation confirmation 
+* Error: The room is already booked 
+It helps developers implement the function correctly and helps testers create suitable test cases.
+
+8. Compare the three QFD requirement types: normal, expected, and exciting. Create several examples for a software system and explain why each example belongs to its category.?
+Normal requirements 
+These are functions that the customer directly requests.
+Examples:
+* Customers can search for available rooms. 
+* Customers can create and cancel reservations. 
+* These are normal requirements because the customer clearly asks for them.
+Expected requirements 
+These are basic functions that users expect automatically, even if they do not mention them.
+Examples:
+* The system prevents double bookings. 
+* Customer information is stored securely. 
+* These are expected requirements because the system would be unacceptable without them.
+Exciting requirements 
+These are unexpected functions that pleasantly surprise users.
+Examples:
+* The system recommends rooms based on customer preferences. 
+* The customer receives a free room-upgrade notification. 
+* These are exciting requirements because users do not expect them, but they increase customer satisfaction.
+Easy way to remember:
+* Normal: “I asked for it.” 
+* Expected: “Of course it must be there.” 
+* Exciting: “I did not expect this, but it is great!”
+
+9. How can prototyping help with unclear requirements?
+A prototype is an early and simplified version of the system. It allows customers and developers to see and try ideas before building the final product.
+Its main benefits are:
+* Better communication: A visible example is easier to discuss than an abstract description. 
+* Better understanding: Customers can see how the system might work. 
+* Early feedback: Customers can explain what they like or want to change. 
+* Finding missing requirements: The prototype may reveal forgotten features. 
+* Finding problems early: Unclear or incorrect ideas can be corrected before development. 
+* Refining requirements: General ideas can be turned into clear and detailed requirements. 
+Example: A hotel application prototype shows a room-search screen. After trying it, the customer realizes that users also need filters for room type, price, and number of guests.
+
+10. How can FAST and QFD be used together during requirements engineering? Develop a team process that shows how customer needs could be collected, discussed, prioritized, and transformed into software requirements.
+FAST helps the team collect and discuss customer needs. QFD helps classify and prioritize these needs.
+A simple team process:
+1. Prepare the FAST meeting
+Invite customers, users, analysts, and developers. 
+2. Collect customer needs
+Ask what problems users have and what the system should do. 
+3. Discuss and clarify ideas
+Remove duplicates, explain unclear ideas, and solve conflicts. 
+4. Classify requirements with QFD
+Divide them into: 
+* Normal: room search and reservation 
+* Expected: secure login and prevention of double bookings 
+* Exciting: automatic room recommendations 
+5. Prioritize requirements
+Decide which requirements are essential and which can be added later. 
+6. Create clear software requirements
+For example: “The system shall prevent two customers from reserving the same room for the same dates.” 
+7. Review and approve
+Customers and developers check and accept the final requirements.
+
