@@ -25,13 +25,14 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-          cache-dependency-path: pom.xml
+          cache-dependency-path: Example_101/pom.xml
       - name: Check Java version
         run: |
           java -version
           javac -version
           mvn --version
       - name: Compile application
+        working-directory: Example_101
         run: |
           mvn --batch-mode --no-transfer-progress clean compile
 
@@ -49,12 +50,13 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-          cache-dependency-path: pom.xml
+          cache-dependency-path: Example_101/pom.xml
       - name: Check Java version
         run: |
           java -version
           javac -version
       - name: Run JUnit tests
+        working-directory: Example_101
         run: |
           mvn --batch-mode --no-transfer-progress test
       - name: Upload test results
@@ -62,7 +64,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: test-results
-          path: target/surefire-reports/
+          path: Example_101/target/surefire-reports/
 
   # PACKAGE
   package:
@@ -78,22 +80,24 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-          cache-dependency-path: pom.xml
+          cache-dependency-path: Example_101/pom.xml
       - name: Check Java version
         run: |
           java -version
           javac -version
       - name: Create executable JAR
+        working-directory: Example_101
         run: |
           mvn --batch-mode --no-transfer-progress clean package -DskipTests
       - name: List target directory
+        working-directory: Example_101
         run: |
           ls -la target/
       - name: Upload JAR
         uses: actions/upload-artifact@v7
         with:
           name: example-101-jar
-          path: target/*.jar
+          path: Example_101/target/*.jar
 
   # RUN
   run:
