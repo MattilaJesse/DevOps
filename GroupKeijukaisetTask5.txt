@@ -1,0 +1,59 @@
+Teamwork V — Project Requirements Specification
+
+Project: Hotel Management and Booking Application
+Group: Keijukaiset
+
+Team members:
+* Mika Perttu — e2402623
+* Jesse Mattila — e2402265
+* Vadim Kliuchevskii — e2402269
+* Tuukka Kosonen — e2203446
+1. Identify the Stakeholders and User Needs
+* Customers need to find available rooms, see prices, make reservations, and view or cancel their own reservations.
+* Receptionists need to find reservations, create bookings for customers, and manage check-in and check-out.
+* Hotel management needs accurate reservation information and a system that prevents double bookings. Need to add and update rooms, set room prices, and manage room availability.
+2. Updated Application Requirements
+Functional requirements
+* The application shall provide a simple web interface for customers, receptionists, and hotel management.
+* The start page shall allow users to select a role for demonstration purposes.
+* Customers shall be able to search for rooms, create reservations, and view or cancel their reservations.
+* Receptionists shall be able to find and create reservations and record check-in and check-out.
+* Hotel management shall be able to add and update rooms, change prices, and mark rooms as unavailable.
+Usability
+* The interface shall use clearly labelled buttons, forms, and tables.
+* Users shall receive confirmation after successful operations.
+* Invalid input shall produce an understandable error message.
+* The departure date shall be later than the arrival date.
+Compatibility and integration
+* The backend shall be written in Java.
+* The frontend shall use simple HTML and CSS.
+* The Java application shall serve the web pages and process user requests.
+* Users shall access the application through a web browser.
+* The application shall be packaged as a runnable JAR and require a compatible Java runtime.
+* No external booking or payment services are required.
+Constraints
+* This is a small educational experiment.
+* The application shall run locally and use fictional customer data.
+* Role selection is for demonstration only and does not provide secure authentication.
+* Data shall be stored in a local file.
+* Only one running application instance is supported.
+* A database, online payments, and production deployment are outside the initial scope.
+3. Updated Subsystem A: Web Interface
+* Purpose: Display pages and allow users to interact with the application.
+* Inputs: Selected role, customer identifiers, dates, room details, and form submissions.
+* Outputs: Room tables, reservation details, confirmations, and error messages.
+* Functional requirements: Provide pages for room searches, reservations, receptionist operations, and room management.
+* Non-functional requirements: Use a consistent layout, clearly labelled controls, and understandable validation messages.
+The web interface sends requests to the Java backend. Room and reservation management process these requests and use file storage to save and load data.
+4. Updated QFD Requirement: Easy Booking
+* User need: Make a reservation easily.
+* Importance: 5.
+* Technical requirement: Provide a simple web booking form.
+* Acceptance criterion: A customer can enter an identifier and dates, view available rooms, select a room, and receive a booking confirmation.
+
+
+5. Draw use-case and sequence diagrams for the application. 
+Top of Form
+Bottom of Form
+
+
